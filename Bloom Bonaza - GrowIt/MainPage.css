@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+body, html {
+  background-image: url('imageedit_6_4868938528.png');
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.sabka{
+    display: grid;
+}
+
+.mess{
+    width: 70px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.maincontent{
+    margin-top: 80px;
+}
+
+.head{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    height: 100px;
+    background-color: rgb(139, 13, 50);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.MessageBox{
+	position: fixed;
+	top: 50%;
+	left: 87%;
+	transform: translate(-50%,-50%);
+	background: #fff;
+	width: 380px;
+	border-radius: 3px;
+  border-color: rgb(139, 13, 50);
+}
+
+.MessageBox .tab_wrap{
+	padding: 25px 25px 20px 25px;
+  border-color: rgb(139, 13, 50);
+}
+
+.MessageBox .tab_wrap ul{
+	display: flex;
+	background: #f4fafe;
+	border-radius: 3px;
+  border-color: rgb(139, 13, 50);
+}
+
+.MessageBox .tab_wrap ul li{
+	width: 125px;
+	text-align: center;
+  list-style-type: none;
+  background-color: rgb(139, 13, 50);
+  color: #fff;
+	padding: 10px;
+	cursor: pointer;
+	border-radius: 3px;
+}
+
+.MessageBox .tab_wrap ul li:hover,
+.MessageBox .tab_wrap ul li.active{
+	background: rgb(106, 9, 38);
+}
+
+.inbox{
+	height: 450px;
+}
+
+.inbox ul li{
+  list-style-type: none;
+  border-color: rgb(139, 13, 50);
+  /* background-color: rgb(139, 13, 50); */
+}
+
+.inbox li .all{
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+  margin-bottom: 2px;
+	border: 1px solid rgb(139, 13, 50);
+	cursor: pointer;
+  border-radius: 5px;
+}
+
+.inbox li:last-child .all{
+	border-bottom: 0;
+}
+
+.inbox li .all:hover{
+	background: #e4edf5;
+}
+
+.inbox li .all img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.inbox li .all .li_right{
+	display: flex;
+}
+
+.inbox li .all .message{
+	margin: 0 20px;
+}
+
+.inbox li .all .message .title{
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.inbox li .all .message .sub_title{
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.inbox li .all .time{
+	color: #ccc;
+	font-size: 12px;
+	text-align: right;
+}
+
+.inbox li .all .time_status .status{
+	width: 25px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	border-radius: 50%;
+	background: #0058ff;
+	color: #fff;
+	margin-top: 15px;
+	font-size: 10px;
+}
+
+.container {
+    max-width: 1120px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .slide-container {
+    margin: 0 30px;
+    overflow: hidden;
+  }
+  .card {
+    background: #fff;
+    border-radius: 8px;
+  }
+  .card .image-box {
+    height: 200px;
+  }
+  .card .image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  .card .profile-details {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    padding: 15px;
+  }
+  .card .profile-details img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+  .profile-details .name {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .profile-details .job {
+    font-size: 12px;
+    font-weight: 500;
+    color: #4d4d4d;
+  }
+  .swiper-navBtn {
+    color: #000;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+  }
+  .swiper-navBtn::before,
+  .swiper-navBtn::after {
+    font-size: 18px;
+  }
+  .swiper-pagination-bullet {
+    background-color: #000;
+  }
+  @media screen and (max-width: 768px) {
+    .swiper-navBtn {
+      display: none;
+    }
+  }
+.hero{
+    display: flex;
+    padding: 0 35px;
+    align-items: center;
+    min-height: 500px;
+  }
+
+.wrapper {
+    max-width: 1000px;
+    /* width: 90%; */
+    position: relative;
+    left: 50px;
+}
+.wrapper i {
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    text-align: center;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.23);
+    transform: translateY(-50%);
+    transition: transform 0.1s linear;
+}
+.wrapper i:active{
+    transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+    left: -22px;
+}
+.wrapper i:last-child{
+    right: -22px;
+}
+  .wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .carousel::-webkit-scrollbar {
+    display: none;
+  }
+  .carousel.no-transition {
+    scroll-behavior: auto;
+  }
+  .carousel.dragging {
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+  .carousel.dragging .card {
+    cursor: grab;
+    user-select: none;
+  }
+  .carousel :where(.card, .img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel .card {
+    scroll-snap-align: start;
+    height: 270px;
+    width: 270px;
+    list-style: none;
+    background: #fff;
+    cursor: pointer;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 8px;
+  }
+  .carousel .card .img {
+    background: rgb(139, 13, 50);
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+  }
+  .card .img img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+  }
+  .carousel .card h2 {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 30px 0 5px;
+  }
+  .carousel .card span {
+    color: #6A6D78;
+    font-size: 12px;
+  }
+  @media screen and (max-width: 900px) {
+    .wrapper .carousel {
+      grid-auto-columns: calc((100% / 2) - 9px);
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .wrapper .carousel {
+      grid-auto-columns: 100%;
+    }
+  }
+
+  .hh{
+    position: relative;
+    top: 80px;
+    left: 90px;
+    font-size: 50px;
+    font-weight: 800;
+    width: max-content;
+  }
+
+  .hh2{
+    position: relative;
+    top: 40px;
+    left: 90px;
+    width: max-content;
+    font-size: 50px;
+    font-weight: 800;
+  }
+
+*{
+    margin: 0;
+    font-weight: 500;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.head .icon{
+    display: flex;
+    margin-right: 20px;
+    align-items: center;
+}
+
+.head img{
+    height: 100px;
+}
+
+.searchbar{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 50px;
+    padding-right: 0;
+    width: fit-content;
+
+}
+
+.head .searchbar input{
+    height: 50px;
+    border-radius: 30px;
+    width: 700px;
+}
+
+.cat{
+    width: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cat .sh{
+  background-color: rgb(139, 13, 50);
+  height: 40px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cat .sh:hover{
+  background-color: rgb(104, 9, 38);
+}
+.cat .fe:hover{
+  background-color: rgb(104, 9, 38);
+}
+.cat .fc:hover{
+  background-color: rgb(104, 9, 38);
+}
+.cat .bh:hover{
+  background-color: rgb(104, 9, 38);
+}
+
+.cat .fe{
+  background-color: rgb(139, 13, 50);
+  height: 40px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cat .fc{
+  background-color: rgb(139, 13, 50);
+  height: 40px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cat .bh{
+  background-color: rgb(139, 13, 50);
+  height: 40px;
+  width: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#abc{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.bh{
+    margin-right: 20px;
+}
+
+.acc{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px 0 5px 5px;
+}
+
+.acc i{
+    margin-right: 10px;
+}
+
+.acc a span{
+    color: rgb(139, 13, 50);
+    font-size: 12px;
+}

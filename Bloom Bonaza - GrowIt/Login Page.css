@@ -1,0 +1,163 @@
+body, html {
+    height: 100%;
+    background-image: url('Picture2.png');
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form{
+    background-color: white;
+    height: 600px;
+    width: 360px;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#xz{
+    background-color: white;
+}
+
+h3{
+    text-align: center;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+}
+
+
+.email{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.emailinput{
+    padding-left: 0px;
+    height: 40px;
+    width: 355px;
+    border-radius: 5px;
+    border-color: transparent;
+    border-bottom-color: rgb(47, 45, 45);
+}
+
+.pass{
+    margin-top: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.passinput{
+    padding-left: 0px;
+    height: 40px;
+    width: 355px;
+    border-radius: 5px;
+    border-color: transparent;
+    border-bottom-color: rgb(47, 45, 45);
+}
+
+.fp{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.fp a{
+    text-decoration: none;
+    color: rgb(18, 18, 18);
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.butt{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.butt button{
+    width: 250px;
+    border-color: rgb(139, 13, 50);
+    border-width: 2px;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 15px;
+    color: rgb(139, 13, 50);
+    font-weight: 800;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.osu{
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.logo{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.google i{
+    background-color: white;
+    margin: 0 10px 0 10px;
+    font-size: 25px;
+}
+
+.facebook i{
+    background-color: white;
+    margin: 0 10px 0 10px;
+    font-size: 25px;
+}
+
+.twitter i{
+    background-color: white;
+    margin: 0 10px 0 10px;
+    font-size: 25px;
+}
+
+.or{
+    background-color: rgb(139, 13, 50);
+    display: flex;
+    color: rgb(139, 13, 50);
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 170px;
+    margin-left: 95px;
+    align-items: center;
+    border-radius: 5px;
+}
+.or img{
+    height: 40px;
+    margin-left: 5px;
+}
+
+.or p{
+    background-color: rgb(139, 13, 50);
+}
+
+.or p b{
+    color: white;
+    background-color: rgb(139, 13, 50);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 30px;
+}
