@@ -1065,7 +1065,7 @@ footer a img {
   border-radius: 50%;
   background: rgb(104, 9, 38);
   transition: all 0.2s ease;
-  z-index: 3;
+  z-index: 21;
 }
 body.show-chatbot .chatbot-toggler {
   transform: rotate(90deg);
