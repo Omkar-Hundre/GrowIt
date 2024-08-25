@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GrowIt - Make Your Dream A Reality</title>
     <link rel="icon" href="Assets\Login Page\Picture1.png">
-    <link rel="stylesheet" href="CSS/index2.css">
+    <link rel="stylesheet" href="CSS/MainPage.css">
     <script src="https://kit.fontawesome.com/a829801256.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>      
-    <script src="JS/index2.js" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+    <script src="JS/MainPage.js" defer></script>
 </head>
 
 <body>
@@ -25,7 +24,7 @@
       
         <div id="searchbar">
             <i class="fa-solid fa-magnifying-glass" style="color: #3d3d3e;"></i>
-            <input placeholder="Search..." type="text">
+            <input placeholder="Search" type="text">
         </div>
       
         <div class="header_links">
@@ -38,22 +37,6 @@
                 <a href="#"><span>Omkar Hu..</span></a>
             </div>
         </div>
-        <i class="ri-menu-3-line" id="menu-icon"></i>
-
-        <!-- Mobile Menu -->
-        <div class="mobile-menu" id="mobile-menu">
-            <i class="ri-close-line" id="close-icon"></i>
-            <a href="Heroes.html" id="mobile-header-element">Skilled Heroes</a>
-            <a href="Field Experts.html" id="mobile-header-element">Field Experts</a>
-            <a href="Course.html" id="mobile-header-element">Find Course</a>
-            <a href="#" id="mobile-header-element">Become a Hero</a>
-            <div class="mobile-account-element">
-                <i class="fa-solid fa-user"></i>
-                <a href="#"><span>Omkar Hu..</span></a>
-            </div>
-        </div>
-        <i id="close-icon"></i>
-
     </div>
 
     <!-- ---------------------Banner----------- -->
@@ -68,17 +51,20 @@
         </div>
     </div>
 
+    
+
     <div class="maincontent">
+
         <!---------------------------- News -------------------------------------->
-        <h1 class="heading"><img id="bar-copy" src="Assets/Main Page/bar - Copy.png" alt=""><span> News Cover </span><img id="bar" src="Assets/Main Page/bar.png" alt=""></h1>
-        <div class="slider" id="slider">
+        <h1 class="heading"><img style="height: 45px; width: 120px;" src="Assets/Main Page/bar - Copy.png" alt=""> News Cover <img style="height: 45px; width: 880px;" src="Assets/Main Page/bar.png" alt=""></h1>
+        <div class="slider">
             <div class="list">
                 <div class="item">
                     <div class="content">
                         <h1>Latest in Tech</h1>
                         <h2>Discover the Future of Technology</h2>
                         <p>Tech startups are experiencing a surge in funding as investors seek innovative solutions.</p>
-                        <p id="key-highlights">Key Highlights:</p>
+                        <p>Key Highlights:</p>
                         <ul>
                             <li>Focus on sustainable technology.</li>
                             <li>AI-driven platforms are gaining traction.</li>
@@ -94,7 +80,7 @@
                         <h1>Business Trends</h1>
                         <h2>Adapting to the New Normal</h2>
                         <p>The business landscape is evolving, with remote work becoming a norm.</p>
-                        <p id="key-highlights">Key Highlights:</p>
+                        <p>Key Highlights:</p>
                         <ul>
                             <li>Companies are adapting to hybrid models.</li>
                             <li>Prioritizing employee well-being and flexibility.</li>
@@ -110,7 +96,7 @@
                         <h1>Startups to Watch</h1>
                         <h2>Innovative Solutions on the Rise</h2>
                         <p>Several startups are making waves in the market with unique value propositions.</p>
-                        <p id="key-highlights">Key Highlights:</p>
+                        <p>Key Highlights:</p>
                         <ul>
                             <li>Fintech and health tech leading the charge.</li>
                             <li>Focus on user-centric designs and solutions.</li>
@@ -126,7 +112,7 @@
                         <h1>Investment Insights</h1>
                         <h2>Shaping the Future of Finance</h2>
                         <p>Investors are turning their focus towards impact investing, seeking to make a difference while earning returns.</p>
-                        <p id="key-highlights">Key Highlights:</p>
+                        <p>Key Highlights:</p>
                         <ul>
                             <li>Emphasis on sustainable and responsible investments.</li>
                             <li>New opportunities in emerging markets.</li>
@@ -142,7 +128,7 @@
                         <h1>Market Developments</h1>
                         <h2>Understanding Consumer Behavior</h2>
                         <p>The global market is witnessing significant changes evolving consumer behavior.</p>
-                        <p id="key-highlights">Key Highlights:</p>
+                        <p>Key Highlights:</p>
                         <ul>
                             <li>Data analytics driving better decision-making.</li>
                             <li>Adapting to changing consumer preferences.</li>
@@ -158,7 +144,7 @@
                         <h1>Innovation in Education</h1>
                         <h2>Transforming Learning Experiences</h2>
                         <p>Edtech startups are revolutionizing the education sector, offering personalized learning experiences.</p>
-                        <p id="key-highlights">Key Highlights:</p>
+                        <p>Key Highlights:</p>
                         <ul>
                             <li>Focus on accessibility and quality content.</li>
                             <li>Utilizing technology for better engagement.</li>
@@ -174,7 +160,7 @@
                         <h1>Health and Wellness</h1>
                         <h2>Prioritizing Well-being</h2>
                         <p>The health and wellness industry is booming as consumers prioritize mental and physical well-being.</p>
-                        <p id="key-highlights">Key Highlights:</p>
+                        <p>Key Highlights:</p>
                         <ul>
                             <li>Exploring new approaches to holistic health.</li>
                             <li>Focus on preventive care and wellness programs.</li>
@@ -190,13 +176,13 @@
                         <h1>Environmental Sustainability</h1>
                         <h2>Creating a Greener Future</h2>
                         <p>Companies are increasingly focusing on sustainability initiatives to combat climate change.</p>
-                        <p id="key-highlights">Key Highlights:</p>
+                        <p>Key Highlights:</p>
                         <ul>
                             <li>Innovation in green technologies is key.</li>
                             <li>Corporate social responsibility gaining traction.</li>
                             <li>Investment in renewable energy sources.</li>
                         </ul>
-                        <p>"Sustainability is the key to a better future." - Greta </p>
+                        <p>"Sustainability is the key to a better future." - Greta Thunberg</p>
                         <p>Read more about these efforts in our <a href="link-to-article">full article</a>.</p>
                     </div>
                     <img src="Assets/Main Page/sustainability.png" alt="Environmental Sustainability Image">
@@ -220,8 +206,8 @@
         </div>
 
 
-
         <!-- --------------------------------Quote Card-------------------------- -->
+
         <div class="container">
             <div class="shadow"></div>
             <div class="box1">
@@ -231,9 +217,10 @@
             </div>
         </div>
 
+        
         <!-- ---------------------------------Heroes-------------------------------------------- -->
 
-        <h1 class="heading"><img id="heroes-bar-copy" src="Assets/Main Page/bar - Copy.png" alt=""><span> Find heroes </span><img id="heroes-bar" src="Assets/Main Page/bar.png" alt=""></h1>
+        <h1 class="heading"><img style="height: 45px; width: 120px;" src="Assets/Main Page/bar - Copy.png" alt=""> Find heroes for your startup <img style="height: 45px; width: 366px;" src="Assets/Main Page/bar.png" alt=""></h1>
         <div class="card_slider">
             <div id="left_right_icons">
                 <i id="left" class="fa-solid fa-angle-left"></i>
@@ -271,9 +258,9 @@
                     <span>App Designer</span>
                 </li>
                 <li class="card">
-                    <div class="img"><img src="Assets\Main Page\img-1.jpg" alt="img" draggable="false"></div>
-                    <h2>Blanche Pearson</h2>
-                    <span>Sales Manager</span>
+                  <div class="img"><img src="Assets\Main Page\img-1.jpg" alt="img" draggable="false"></div>
+                  <h2>Blanche Pearson</h2>
+                  <span>Sales Manager</span>
                 </li>
                 <li class="card">
                     <div class="img"><img src="Assets\Main Page\img-2.jpg" alt="img" draggable="false"></div>
@@ -300,9 +287,11 @@
                     <h2>Donald Horton</h2>
                     <span>App Designer</span>
                 </li>
-                </div>
-                <a href="Heroes.html" id="carousel_more">Show more</a>
+              </div>
+              <a href="Heroes.html" id="carousel_more">Show more</a>
         </div>
+
+
 
         <!-- ------------------------Reveal--------------------- -->
         <div id="reveal-main">
@@ -321,147 +310,17 @@
             <div id="reveal-bottom">
                 <h1 id="reveal-bottom-h1">LEARNING</h1>
             </div>
-        </div>        
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js" integrity="sha512-AMl4wfwAmDM1lsQvVBBRHYENn1FR8cfOTpt8QVbb/P55mYOdahHD4LmHM1W55pNe3j/3od8ELzPf/8eNkkjISQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
+        <script src="JS/MainPage.js" defer></script>
+
         <div id="space-reveal"></div>
-        
-        <!-- ---------------------------courses and workshops------------------------ -->
-        <div id="omkar"></div>
-        <div class="container-course">
-            <div class="card-course" id="card-course-1">
-                <div class="image">
-                    <img src="Assets\Main Page\1.jpg">
-                </div>
-                <div class="title">
-                    <h1>Grow Your Buisness</h1>
-                </div>
-                <div class="des">
-                    <p>Want to take you buisness...</p>
-                    <button>₹ 6,999.0</button>
-                </div>
-            </div>
 
-            <div class="card-course" id="card-course-2">
-                <div class="image">
-                    <img src="Assets\Main Page\2.jpg">
-                </div>
-                <div class="title">
-                    <h1>Learn To Grow</h1>
-                </div>
-                <div class="des">
-                    <p>Stuck at beginning of your journey...</p>
-                    <button>₹ 4,599.0</button>
-                </div>
-            </div>
-            
-            <div class="card-course" id="card-course-3">
-                <div class="image">
-                    <img src="Assets\Main Page\3.jpg">
-                </div>
-                <div class="title">
-                    <h1>Learn Graphic Design</h1>
-                </div>
-                <div class="des">
-                    <p>Design your website more beutifully...</p>
-                    <button>Free*</button>
-                </div>
-            </div>
+        <!-- ------------------------Courses--------------------- -->
 
-            <div class="card-course" id="card-course-4">
-                <div class="image">
-                    <img src="Assets\Main Page\4.jpg">
-                </div>
-                <div class="title">
-                    <h1>Journey To startup</h1>
-                </div>
-                <div class="des">
-                    <p>How to start? when to start? wher to...</p>
-                    <button>₹ 5,699.0</button>
-                </div>
-            </div>
-
-            <div class="card-course" id="card-course-5">
-                <div class="image">
-                    <img src="Assets\Main Page\5.jpg">
-                </div>
-                <div class="title">
-                    <h1>Do It Everyday</h1>
-                </div>
-                <div class="des">
-                    <p>Things you need to acquire before stratin...</p>
-                    <button>₹ 5,699.0</button>
-                </div>
-            </div>
-
-            <div class="card-course" id="card-course-6">
-                <div class="image">
-                    <img src="Assets\Main Page\a.jpg">
-                </div>
-                <div class="title">
-                    <h1>Jack Hundre</h1>
-                </div>
-                <div class="des">
-                    <p>Workshop to boost the entr...</p>
-                    <button>₹ 199.0</button>
-                </div>
-            </div>
-
-            <div class="card-course" id="card-course-7">
-                <div class="image">
-                    <img src="Assets\Main Page\b.jpg">
-                </div>
-                <div class="title">
-                    <h1>Alex Pathare</h1>
-                </div>
-                <div class="des">
-                    <p>A workshop to change your idea...</p>
-                    <button>₹ 199.0</button>
-                </div>
-            </div>
-
-            <div class="card-course" id="card-course-8">
-                <div class="image">
-                    <img src="Assets\Main Page\c.jpg">
-                </div>
-                <div class="title">
-                    <h1>Learn Graphic Design</h1>
-                </div>
-                <div class="des">
-                    <p>Short talk on your statistics and f...</p>
-                    <button>₹ 59.0</button>
-                </div>
-            </div>
-
-            <div class="card-course" id="card-course-9">
-                <div class="image">
-                    <img src="Assets\Main Page\d.jpg">
-                </div>
-                <div class="title">
-                    <h1>Robin & Jiya</h1>
-                </div>
-                <div class="des">
-                    <p>Meet two biggest entreprenaurs at on...</p>
-                    <button>₹ 259.0</button>
-                </div>
-            </div>
-            <div class="card-course" id="card-course-10">
-                <div class="image">
-                    <img src="Assets\Main Page\om.jpg">
-                </div>
-                <div class="title">
-                    <h1>Plan Out Buisness</h1>
-                </div>
-                <div class="des">
-                    <p>Learn how to plan your buisness from ...</p>
-                    <button>₹ 159.0</button>
-                </div>
-            </div>
-            <div class="center-text-course">Courses & Workshop</div>
-        </div>
-
-        
-        <!-- ------------------------Only Courses--------------------- -->
-
-        <h1 class="heading"><img id="courses-bar-copy" src="Assets/Main Page/bar - Copy.png" alt=""><span class="span1"> Course to take-off your startup </span><span class="span2">Courses</span><img id="courses-bar" src="Assets/Main Page/bar.png" alt=""></h1>
+        <h1 id="horikeuparwala" class="heading"><img style="height: 45px; width: 120px;" src="Assets/Main Page/bar - Copy.png" alt=""> Course to take-off your startup <img style="height: 45px; width: 250px;" src="Assets/Main Page/bar.png" alt=""></h1>
 
         <div class="knowledge_cards">
             <!--cards -->
@@ -537,9 +396,9 @@
         <a href="Course.html" id="course_more">Show more</a>
 
 
-        <!-- ------------------------Only Workshops--------------------- -->
+        <!-- ------------------------Workshops--------------------- -->
 
-        <h1 class="heading"><img id="workshop-bar-copy" src="Assets/Main Page/bar - Copy.png" alt=""><span class="span1"> Workshops to boost you </span><span class="span2">Workshops</span><img id="workshop-bar" src="Assets/Main Page/bar.png" alt=""></h1>
+        <h1 class="heading"><img style="height: 45px; width: 120px;" src="Assets/Main Page/bar - Copy.png" alt=""> Workshops to boost you <img style="height: 45px; width: 480px;" src="Assets/Main Page/bar.png" alt=""></h1>
 
         <div class="knowledge_cards">
             <!--cards -->
@@ -584,7 +443,7 @@
                 </div>
             </div>
 
-            <!--cards -->
+          <!--cards -->
             <div class="card_second">
                 <div class="image">
                     <img src="Assets\Main Page\d.jpg">
@@ -598,7 +457,7 @@
                 </div>
             </div>
 
-            <!--cards -->
+          <!--cards -->
             <div class="card_second">
                 <div class="image">
                     <img src="Assets\Main Page\om.jpg">
@@ -614,10 +473,10 @@
         </div>
         <a href="Course.html" id="course_more">Show more</a>
 
-        
+
         <!-- ----------------------------------Connections-------------------------------- -->
 
-        <h1 class="heading"><img id="heroes-bar-copy" src="Assets/Main Page/bar - Copy.png" alt=""><span class="span1"> Grow your connections </span><span class="span2">Grow connections</span><img id="heroes-bar" src="Assets/Main Page/bar.png" alt=""></h1>
+        <h1 class="heading"><img style="height: 45px; width: 120px;" src="Assets/Main Page/bar - Copy.png" alt=""> Grow your connections <img style="height: 45px; width: 505px;" src="Assets/Main Page/bar.png" alt=""></h1>
         <div class="card_slider">
             <div id="left_right_icons">
                 <i id="left" class="fa-solid fa-angle-left"></i>
@@ -650,14 +509,14 @@
                     <span>Founder MouseIng</span>
                 </li>
                 <li class="card">
-                    <div class="img"><img src="Assets\Main Page\y.jpg" alt="img" draggable="false"></div>
-                    <h2>Ronald Harden</h2>
-                    <span>CTO Sruet</span>
+                  <div class="img"><img src="Assets\Main Page\y.jpg" alt="img" draggable="false"></div>
+                  <h2>Ronald Harden</h2>
+                  <span>CTO Sruet</span>
                 </li>
                 <li class="card">
-                    <div class="img"><img src="Assets\Main Page\q.jpg" alt="img" draggable="false"></div>
-                    <h2>Malika Arora</h2>
-                    <span>CEO Shanghai Corporation</span>
+                  <div class="img"><img src="Assets\Main Page\q.jpg" alt="img" draggable="false"></div>
+                  <h2>Malika Arora</h2>
+                  <span>CEO Shanghai Corporation</span>
                 </li>
                 <li class="card">
                     <div class="img"><img src="Assets\Main Page\w.jpg" alt="img" draggable="false"></div>
@@ -680,12 +539,12 @@
                     <span>Founder MouseIng</span>
                 </li>
                 <li class="card">
-                    <div class="img"><img src="Assets\Main Page\y.jpg" alt="img" draggable="false"></div>
-                    <h2>Ronald Harden</h2>
-                    <span>CTO Sruet</span>
+                  <div class="img"><img src="Assets\Main Page\y.jpg" alt="img" draggable="false"></div>
+                  <h2>Ronald Harden</h2>
+                  <span>CTO Sruet</span>
                 </li>                
-                </div>
-                <a href="Heroes.html" id="carousel_more">Show more</a>
+              </div>
+              <a href="Heroes.html" id="carousel_more">Show more</a>
         </div>
 
 
@@ -745,6 +604,5 @@
                 </div>
             </div>
         </div>
-
-    </div>
+        
 </body>

@@ -126,7 +126,7 @@ carousels.forEach((cardSlider) => {
 
 document.getElementById("banner-button").onclick = function() {
   window.scrollTo({
-    top: 870,
+    top: 900,
     behavior: 'smooth' 
   });
 };
@@ -424,3 +424,5 @@ gsap.to("header", {
 });
 
 // --------------------------------------------------------------------------------------------------------------------------------
+
+

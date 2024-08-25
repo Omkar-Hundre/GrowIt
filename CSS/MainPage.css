@@ -413,19 +413,7 @@ background-color: rgb(104, 9, 38);
 
 
 
-
-
-
-
-
-
-
-
-
-.box1 img {
-  height: 30px;
-  margin: 5px;
-}
+/* ------------------------Quote Card -------------------------- */
 
 .container {
   position: relative;
@@ -455,6 +443,11 @@ background-color: rgb(104, 9, 38);
   border: 2px solid rgb(139, 13, 50); /* Add transition for scrolling effect */
 }
 
+.box1 img {
+  height: 30px;
+  margin: 5px;
+}
+
 .shadow {
   position: absolute;
   width: 100%;
@@ -474,6 +467,14 @@ background-color: rgb(104, 9, 38);
 .shadow.scrolled {
   opacity: 1; /* Show shadow when scrolled */
 }
+
+/* -------------------------------------------------------------------------- */
+
+
+
+
+
+
 
 /* -------------------card slider-------------------- */
 

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Homepage</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="omkar"></div>
+    <div class="container-course">
+        <div class="card-course" id="card-course-1">
+            <div class="image">
+                <img src="Assets\Main Page\1.jpg">
+            </div>
+            <div class="title">
+                <h1>Grow Your Buisness</h1>
+            </div>
+            <div class="des">
+                <p>Want to take you buisness...</p>
+                <button>₹ 6,999.0</button>
+            </div>
+        </div>
+
+        <div class="card-course" id="card-course-2">
+            <div class="image">
+                <img src="Assets\Main Page\2.jpg">
+            </div>
+            <div class="title">
+                <h1>Learn To Grow</h1>
+            </div>
+            <div class="des">
+                <p>Stuck at beginning of your journey...</p>
+                <button>₹ 4,599.0</button>
+            </div>
+        </div>
+        
+        <div class="card-course" id="card-course-3">
+            <div class="image">
+                <img src="Assets\Main Page\3.jpg">
+            </div>
+            <div class="title">
+                <h1>Learn Graphic Design</h1>
+            </div>
+            <div class="des">
+                <p>Design your website more beutifully...</p>
+                <button>Free*</button>
+            </div>
+        </div>
+
+        <div class="card-course" id="card-course-4">
+            <div class="image">
+                <img src="Assets\Main Page\4.jpg">
+            </div>
+            <div class="title">
+                <h1>Journey To startup</h1>
+            </div>
+            <div class="des">
+                <p>How to start? when to start? wher to...</p>
+                <button>₹ 5,699.0</button>
+            </div>
+        </div>
+
+        <div class="card-course" id="card-course-5">
+            <div class="image">
+                <img src="Assets\Main Page\5.jpg">
+            </div>
+            <div class="title">
+                <h1>Do It Everyday</h1>
+            </div>
+            <div class="des">
+                <p>Things you need to acquire before stratin...</p>
+                <button>₹ 5,699.0</button>
+            </div>
+        </div>
+
+        <div class="card-course" id="card-course-6">
+            <div class="image">
+                <img src="Assets\Main Page\a.jpg">
+            </div>
+            <div class="title">
+                <h1>Jack Hundre</h1>
+            </div>
+            <div class="des">
+                <p>Workshop to boost the entr...</p>
+                <button>₹ 199.0</button>
+            </div>
+        </div>
+
+        <div class="card-course" id="card-course-7">
+            <div class="image">
+                <img src="Assets\Main Page\b.jpg">
+            </div>
+            <div class="title">
+                <h1>Alex Pathare</h1>
+            </div>
+            <div class="des">
+                <p>A workshop to change your idea...</p>
+                <button>₹ 199.0</button>
+            </div>
+        </div>
+
+        <div class="card-course" id="card-course-8">
+            <div class="image">
+                <img src="Assets\Main Page\c.jpg">
+            </div>
+            <div class="title">
+                <h1>Learn Graphic Design</h1>
+            </div>
+            <div class="des">
+                <p>Short talk on your statistics and f...</p>
+                <button>₹ 59.0</button>
+            </div>
+        </div>
+
+        <div class="card-course" id="card-course-9">
+            <div class="image">
+                <img src="Assets\Main Page\d.jpg">
+            </div>
+            <div class="title">
+                <h1>Robin & Jiya</h1>
+            </div>
+            <div class="des">
+                <p>Meet two biggest entreprenaurs at on...</p>
+                <button>₹ 259.0</button>
+            </div>
+        </div>
+        <div class="card-course" id="card-course-10">
+            <div class="image">
+                <img src="Assets\Main Page\om.jpg">
+            </div>
+            <div class="title">
+                <h1>Plan Out Buisness</h1>
+            </div>
+            <div class="des">
+                <p>Learn how to plan your buisness from ...</p>
+                <button>₹ 159.0</button>
+            </div>
+        </div>
+    </div>
+    <div class="center-text-course">Courses & Workshop</div>
+    <div id="omkar"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        const cards = document.querySelectorAll('.card-course');
+
+        cards.forEach((card, index) => {
+        gsap.fromTo(card, 
+            {
+            opacity: 0,
+            x: index % 2 === 0 ? -300 : 300, // Slide in from left for even cards and right for odd cards
+            y: index % 2 === 0 ? -100 : 100, // Slight vertical movement
+            },
+            {
+            opacity: 1,
+            x: 0,
+            y: 0,
+            scrollTrigger: {
+                trigger: card,
+                start: "top 70%",
+                end: "top 50%",
+                scrub: true,
+                toggleActions: "play reverse play reverse",
+                markers: false // Set to true for debugging
+            }
+            }
+        );
+        });
+    </script>
+</body>
+</html>
