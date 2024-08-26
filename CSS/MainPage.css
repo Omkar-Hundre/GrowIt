@@ -969,7 +969,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 100%; 
   background-color: rgb(139,13,50);
   padding: 30px;
 }

@@ -402,7 +402,7 @@ body, html {
     .maincontent{
         display: flex;
         font-weight: 900;
-        padding: 2vw 0;
+        padding: 2vw 0 0 0;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -1608,6 +1608,7 @@ body, html {
 
     .knowledge_cards{
         display: flex;
+        flex-direction: column;
         justify-content: space-around;
         padding-bottom: 30px;
         margin: -40px 50px 50px 50px;
@@ -1616,7 +1617,9 @@ body, html {
     
     .card_second{
         width: 100%;
-        height: 300px;
+        padding-bottom: 20px;
+        height: 40vh;
+        margin-bottom: 2vh;
         display: inline-block;
         box-shadow: 2px 2px 20px black;
         border-radius: 8px; 
@@ -1626,11 +1629,17 @@ body, html {
         background: #fff;
     }
     
+    .card_second:active {
+        box-shadow: 4px 4px 24px black;
+        transform: translateY(-15px);
+        transform: scale(1.05);
+    }
+
     #course_more {
         position: relative;
-        width: 1350px;
+        width: 80%;
         height: 60px;
-        bottom: 100px;
+        bottom: 110px;
         background-color: rgb(139, 13, 50);
         text-decoration: none;
         color: white;
@@ -1647,8 +1656,15 @@ body, html {
 
 
 
+/* -------------------------------Connections------------------------------- */
 
+#heading-con {
+    margin-top: 0;
+}
 
+#heading-work {
+    margin-top: 0;
+}
 
 
 
@@ -1666,7 +1682,7 @@ body, html {
 
 #login-arrow {
     height: 200px;
-    right: 340px;
+    left: 50%;
     position: absolute;
 }
 
@@ -1692,7 +1708,15 @@ body, html {
 }
   
 
-
+@media (max-width: 768px) {
+    #login-arrow {
+        height: 150px;
+        left: 40%;
+        width: 60%;
+        position: absolute;
+        margin-top: 30px;
+    }       
+}
 
 
 /* -----------------------------------Footer-------------------------------- */
@@ -1731,7 +1755,7 @@ footer a img {
     background-color: rgb(139,13,50);
 }
 
-.follow_us h4{
+.follow_us h3{
     color: white;
     opacity: 0.7;
     margin-top: 20px;
@@ -1780,7 +1804,29 @@ footer a img {
 }
 
 
+@media (max-width: 768px) {
+    #Blog{
+        display: none;
+    }
 
+    .reference_links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .reference_links a {
+        color: white;
+        opacity: 0.7;
+        text-decoration: none;
+        margin-left: 20px;
+    }
+
+    .footP {
+        margin-top: 80px;
+        width: 100%;
+    }
+}
 
 
 
